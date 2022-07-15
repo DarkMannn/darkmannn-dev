@@ -1,0 +1,8 @@
+# folders
+node_modules/
+build/
+dist/
+out/
+
+# files
+pnpm-lock.yaml

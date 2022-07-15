@@ -4,10 +4,22 @@
   "private": true,
   "description": "Darkmannn's personal blog",
   "scripts": {
+    "prepare": "pnpm dlx husky install",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "lint-staged": {
+    "*": "./scripts/check-commited-file-names.js",
+    "*.{ts,tsx}": "eslint --fix --max-warnings=0",
+    "*.{js,html,css,scss,json,md,yml,yaml}": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "./scripts/check-commit-message.js $HUSKY_GIT_PARAMS"
+    }
   },
   "dependencies": {
     "next": "12.1.6",
@@ -24,7 +36,6 @@
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.2.5",
-    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
     "typescript": "4.7.4"
