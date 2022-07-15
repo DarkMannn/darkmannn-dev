@@ -11,15 +11,9 @@
     "lint": "next lint"
   },
   "lint-staged": {
-    "*": "./scripts/check-commited-file-names.js",
+    "*": "./scripts/check-commited-file-names.mjs",
     "*.{ts,tsx}": "eslint --fix --max-warnings=0",
-    "*.{js,html,css,scss,json,md,yml,yaml}": "prettier --write"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "./scripts/check-commit-message.js $HUSKY_GIT_PARAMS"
-    }
+    "*.{js,mjs,html,css,scss,json,md,yml,yaml}": "prettier --write"
   },
   "dependencies": {
     "next": "12.1.6",
