@@ -1,8 +1,8 @@
 {
-  "name": "darkmannn-blog",
+  "name": "darkmannn-dev",
   "version": "0.1.0",
   "private": true,
-  "description": "Darkmannn's personal blog",
+  "description": "Darkmannn's personal site",
   "scripts": {
     "prepare": "pnpm dlx husky install",
     "dev": "next dev",
