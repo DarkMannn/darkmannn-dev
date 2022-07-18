@@ -15,6 +15,7 @@ specifiers:
   husky: ^8.0.1
   lint-staged: ^13.0.3
   next: 12.1.6
+  normalize.css: ^8.0.1
   prettier: ^2.7.1
   react: 18.2.0
   react-dom: 18.2.0
@@ -22,6 +23,7 @@ specifiers:
 
 dependencies:
   next: 12.1.6_biqbaboplfbrettd7655fr4n2y
+  normalize.css: 8.0.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -1840,6 +1842,10 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /normalize.css/8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
+    dev: false
 
   /npm-run-path/5.1.0:
     resolution: {integrity: sha512-sJOdmRGrY2sjNTRMbSvluQqg+8X7ZK61yvzBEIDhz4f8z1TZFYABsqjjCBd/0PUNE9M6QDgHJXQkGUEm7Q+l9Q==}
