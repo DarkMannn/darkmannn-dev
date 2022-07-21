@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import OptimizedImage from 'next-image-export-optimizer';
 // import Link from 'next/link';
 
 export default function Layout(params: {
@@ -10,9 +10,7 @@ export default function Layout(params: {
   return (
     <>
       <style jsx global>{`
-         {
-          /* root element in next.js */
-        }
+        /* root element in next.js */
         #__next {
           display: grid;
           width: 100vw;
@@ -29,9 +27,7 @@ export default function Layout(params: {
             minmax(3vw, 1fr) minmax(var(--min-width), var(--max-width))
             minmax(3vw, 1fr);
         }
-         {
-          /* main sections */
-        }
+        /* main sections */
         header {
           grid-area: header;
           border-bottom: var(--border-width) solid var(--color-grey-dim);
@@ -61,24 +57,24 @@ export default function Layout(params: {
           justify-content: center;
           align-items: center;
         }
-         {
-          /* children */
-        }
+        /* children */
         .portrait {
-          margin: 0;
+          position: relative;
+          width: 175px;
+          height: 175px;
           border: 3px solid black;
           border-radius: 50%;
-          padding: 10px;
-          background-color: khaki;
+          margin: var(----standard-margin);
+          background-color: whitesmoke;
         }
-        h1 {
+        .nickname {
           margin: 0 0 10px 0;
           font-family: 'Roboto';
           font-weight: 100;
           font-size: 65px;
           text-align: center;
         }
-        a {
+        .nav-item {
           font-weight: 700;
           text-decoration: none;
           color: var(--color-grey-blue);
@@ -102,20 +98,23 @@ export default function Layout(params: {
       </Head>
       <header>
         <div className="portrait">
-          <Image
-            priority
-            src="/images/vercel.svg"
-            className={''}
-            height={144}
-            width={144}
+          <OptimizedImage
+            src="/images/balance-mini.png"
             alt="beaver"
+            layout="fill"
+            objectFit="scale-down"
+            priority
           />
         </div>
-        <h1>DarkMannn</h1>
+        <h1 className="nickname">DarkMannn</h1>
       </header>
       <nav>
-        <a href="">Home</a>
-        <a href="">Blog</a>
+        <a href="" className="nav-item">
+          Home
+        </a>
+        <a href="" className="nav-item">
+          Blog
+        </a>
       </nav>
       <main>{params.children}</main>
       <footer>

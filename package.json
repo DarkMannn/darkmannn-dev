@@ -6,8 +6,8 @@
   "scripts": {
     "prepare": "pnpm dlx husky install",
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
+    "export": "next build && next export && next-image-export-optimizer",
     "lint": "next lint"
   },
   "lint-staged": {
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "next": "12.1.6",
+    "next-image-export-optimizer": "^0.11.0",
     "normalize.css": "^8.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"

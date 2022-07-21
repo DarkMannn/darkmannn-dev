@@ -45,8 +45,9 @@
   --max-width: 700px;
 
   --spinner-size: 40px;
-
   --border-width: 2px;
+  --standard-padding: 5px;
+  --standard-margin: 5px;
 
   /* Color palette */
   --color-black-nuance: #0a0a0a;
