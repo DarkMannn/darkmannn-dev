@@ -37,8 +37,7 @@
 /* Variables */
 :root {
   /* Measurments */
-  --header-height: 300px;
-  --nav-height: 100px;
+  --header-height: 350px;
   --footer-height: 100px;
 
   --min-width: 300px;
