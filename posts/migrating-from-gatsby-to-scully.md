@@ -2,7 +2,7 @@
 title: Migrating From Gatsby To Scully
 description: I decided to refactor my blog. I did it by using an angular-based jamstack framework - Scully
 thumbnail: assets/images/scully.png
-date: 03/02/2022
+date: '2022-02-03'
 tags:
   - angular
   - jamstack

@@ -17,11 +17,15 @@
     "*.{js,mjs,html,css,scss,json,md,yml,yaml}": "prettier --write"
   },
   "dependencies": {
+    "date-fns": "^2.29.1",
+    "gray-matter": "^4.0.3",
     "next": "12.1.6",
     "next-image-export-optimizer": "^0.11.0",
     "normalize.css": "^8.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
   },
   "devDependencies": {
     "@types/node": "18.0.0",

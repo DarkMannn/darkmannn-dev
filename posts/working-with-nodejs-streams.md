@@ -3,7 +3,7 @@ title: Working With Node.js Streams
 description: An article that tries to summarize all of the stream API's and explain how to use them.
 info: This article was first published on https://medium.com/florence-development/working-with-node-js-stream-api-60c12437a1be. It was moved here when I started the 'Balanced Coder' blog.
 thumbnail: assets/images/stream.jpg
-date: 19/11/2019
+date: '2019-11-19'
 tags:
   - node.js
 keywords: Node.js, Streams, Backpressure, Readable, Writable, Transform, Streaming, Tutorial
