@@ -8,6 +8,7 @@
     "dev": "next dev",
     "start": "next start",
     "export": "next build && next export && next-image-export-optimizer",
+    "pre-commit": "lint-staged",
     "lint": "next lint"
   },
   "lint-staged": {
