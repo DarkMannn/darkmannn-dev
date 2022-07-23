@@ -25,7 +25,7 @@ export default function About() {
           margin-bottom: 0;
           font-size: 14px;
           text-align: left;
-          color: var(--color-grey-rose);
+          color: var(--color-tan-mud);
         }
         .row-words {
           display: flex;

@@ -27,7 +27,8 @@ export default function Layout(params: {
         main {
           grid-area: main;
           padding: 100px 0;
-          border-bottom: var(--border-width) solid var(--color-grey-dim);
+          border-bottom: var(--border-width) solid
+            var(--color---color-brown-mud);
         }
       `}</style>
       <Head>

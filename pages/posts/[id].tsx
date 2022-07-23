@@ -15,16 +15,14 @@ function _createCopyButton(copiedText: string) {
   button.textContent = 'Copy';
 
   button.addEventListener('click', () => {
-    if (button.textContent === 'Copied') {
+    if (button.disabled) {
       return;
     }
     navigator.clipboard.writeText(copiedText || '');
-    button.textContent = 'Copied';
     button.disabled = true;
     setTimeout(() => {
-      button.textContent = 'Copy';
       button.disabled = false;
-    }, 3000);
+    }, 300);
   });
 
   return button;
@@ -73,12 +71,15 @@ export default function Post({
           top: 5px;
           right: 5px;
           width: 10ch;
-          background-color: rgb(100 100 100 / 0.5);
           border-width: 0;
-          color: rgb(0, 0, 0);
+          border-radius: 5px;
+          color: var(--color-white-mud);
+          background-color: var(--color-tan-mud);
           cursor: pointer;
+          transition: all 0.15s ease-in;
         }
         div :global(.${copyButtonClassName}:disabled) {
+          color: var(--color-tan-mud);
           cursor: default;
         }
       `}</style>

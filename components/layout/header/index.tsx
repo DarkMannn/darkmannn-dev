@@ -7,7 +7,7 @@ export default function Header() {
       <style jsx>{`
         header {
           grid-area: header;
-          border-bottom: var(--border-width) solid var(--color-grey-dim);
+          border-bottom: var(--border-width) solid var(--color-brown-mud);
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;

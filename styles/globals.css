@@ -49,20 +49,23 @@
   --standard-margin: 5px;
 
   /* Color palette */
-  --color-black-nuance: #0a0a0a;
-  --color-grey-dim: #696969;
-  --color-grey-blue: #8c92ac;
-  --color-grey-light: #d3d3d3;
-  --color-grey-rose: #c4aead;
-  --color-grey-pastel: #cfcfc4;
-  --shadow-grey-dim: rgb(105, 105, 105, 0.3);
+  /* Primary - brand */
+  --color-black-mud: #191919;
+  --color-white-mud: #f1f1f1;
+  --color-brown-mud: #534d44;
+  --color-tan-mud: #908676;
+  /* Secondary - support */
+  --color-blue-mud: #528385;
+  --color-green-mud: #818453;
+  --color-red-mud: #8f6060;
+  --color-grey-mud: #717171;
 }
 
 /* Defaults */
 :root {
   font-family: 'Roboto', sans-serif;
   background-color: white;
-  color: var(--color-grey-dim);
+  color: var(--color-brown-mud);
 }
 
 a {
@@ -70,10 +73,10 @@ a {
   transition: all 0.15s ease-in;
 }
 a:link {
-  color: var(--color-grey-blue);
+  color: var(--color-tan-mud);
 }
 a:visited {
-  color: var(--color-grey-blue);
+  color: var(--color-tan-mud);
 }
 a:hover {
   filter: brightness(0.7);

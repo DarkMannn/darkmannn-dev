@@ -4,7 +4,7 @@
 
 code[class*='language-'],
 pre[class*='language-'] {
-  color: var(--color-grey-dim);
+  color: var(--color-black-mud);
   font-size: 1em;
   text-shadow: none;
   font-family: RobotoMono, monospace;
@@ -28,7 +28,7 @@ code[class*='language-']::selection,
 pre[class*='language-']::mozselection,
 code[class*='language-']::mozselection {
   text-shadow: none;
-  background: #fafafa;
+  background: var(--color-white-mud);
 }
 @media print {
   pre[class*='language-'],
@@ -40,13 +40,13 @@ pre[class*='language-'] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
-  background: #fafafa;
+  background: var(--color-white-mud);
 }
 :not(pre) > code[class*='language-'] {
   padding: 0.1em 0.3em;
   border-radius: 0.3em;
-  color: #182c48;
-  background: #fafafa;
+  color: var(--color-black-mud);
+  background: var(--color-white-mud);
 }
 /*********************************************************
  * Tokens
@@ -58,21 +58,21 @@ pre[class*='language-'] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: var(--color-grey-light);
+  color: var(--color-grey-mud);
 }
 .token.punctuation {
-  color: var(--color-black-nuance);
+  color: var(--color-tan-mud);
 }
 .token.property,
 .token.tag,
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: var(--color-grey-blue);
+  color: var(--color-brown-mud);
 }
 .token.boolean,
 .token.number {
-  color: var(--color-black-nuance);
+  color: var(--color-red-mud);
 }
 .token.selector,
 .token.attr-name,
@@ -80,28 +80,28 @@ pre[class*='language-'] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: var(--color-grey-rose);
+  color: var(--color-green-mud);
 }
 .token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: var(--color-grey-blue);
-  background: #fafafa;
+  color: var(--color-tan-mud);
+  background: var(--color-white-mud);
 }
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: var(--color-grey-blue);
+  color: var(--color-brown-mud);
 }
 .token.function {
-  color: var(--color-black-nuance);
+  color: var(--color-blue-mud);
 }
 .token.regex,
 .token.important,
 .token.variable {
-  color: var(--color-grey-pastel);
+  color: var(--color-green-mud);
 }
 .token.important,
 .token.bold {
@@ -112,27 +112,4 @@ pre[class*='language-'] {
 }
 .token.entity {
   cursor: help;
-}
-/*********************************************************
- * Line highlighting
- */
-pre[data-line] {
-  position: relative;
-}
-pre[class*='language-'] > code[class*='language-'] {
-  position: relative;
-  z-index: 1;
-}
-.line-highlight {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: inherit 0;
-  margin-top: 1em;
-  background: var(--color-grey-blue);
-  box-shadow: inset 5px 0 0 var(--shadow-grey-dim);
-  z-index: 0;
-  pointer-events: none;
-  line-height: inherit;
-  white-space: pre;
 }

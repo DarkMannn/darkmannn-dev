@@ -20,7 +20,7 @@ export default function About() {
           display: block;
           width: 30px;
           height: 30px;
-          color: var(--color-grey-blue);
+          color: var(--color-tan-mud);
           transition: all 0.15s ease-in;
         }
         .social-icon:hover {
