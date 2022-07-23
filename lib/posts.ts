@@ -45,9 +45,13 @@ export function getAllPostIds() {
 export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const fileContentsWithPrismjsClass = fileContents.replaceAll(
+    /(```)\w+/g,
+    '$&[class="line-numbers"]'
+  );
 
   // Use gray-matter to parse the post metadata section
-  const matterResult = grayMatter(fileContents);
+  const matterResult = grayMatter(fileContentsWithPrismjsClass);
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
