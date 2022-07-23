@@ -4,6 +4,7 @@ import type { GetStaticProps, GetStaticPaths } from 'next';
 
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Date from '../../components/date';
+// TODO: Use this
 // import Head from 'next/head';
 
 export default function Post({
