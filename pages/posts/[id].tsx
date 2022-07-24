@@ -22,7 +22,7 @@ function _createCopyButton(copiedText: string) {
     button.disabled = true;
     setTimeout(() => {
       button.disabled = false;
-    }, 300);
+    }, 200);
   });
 
   return button;
@@ -76,7 +76,7 @@ export default function Post({
           color: var(--color-white-mud);
           background-color: var(--color-tan-mud);
           cursor: pointer;
-          transition: all 0.15s ease-in;
+          transition: all 0.15s ease-out;
         }
         div :global(.${copyButtonClassName}:disabled) {
           color: var(--color-tan-mud);
